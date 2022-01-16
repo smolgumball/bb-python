@@ -12,7 +12,7 @@ export async function main(ns) {
   // Python code to be sent to Brython
   // NOTE: Python is whitespace-sensitive, so keep your script indented properly
   const brythonScript = `
-from browser import window, bind, html
+from browser import window, bind, html, aio
 from browser.widgets.dialog import Dialog
 
 async def main():
