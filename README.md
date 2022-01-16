@@ -1,5 +1,8 @@
 # bb-python
-Run Python scripts inside BitBurner! It's janky but hey, if you gotta have your 🐍 then you gotta have your 🐍
+Run Python scripts inside BitBurner! Uses [Brython](https://github.com/brython-dev/brython) to interpret and run Python. 
+
+Example implementation in `1-brythonUsage.js` can invoke BitBurner-specific `ns` functions<br>
+and properly handles async/await to avoid `ns` promise race conditions.
 
 ![image](https://user-images.githubusercontent.com/53015256/149642153-62131cc7-4c08-4c10-8136-662d300a54f5.png)
 
