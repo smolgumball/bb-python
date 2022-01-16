@@ -9,7 +9,7 @@ export async function main(ns) {
   // Ensure every script is ID'd for the brythonEngine
   const brythonScriptId = crypto.randomUUID()
 
-  // Python code to be send to Brython
+  // Python code to be sent to Brython
   // NOTE: Python is whitespace-sensitive, so keep your script indented properly
   const brythonScript = `
 from browser import window, bind, html
