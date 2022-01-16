@@ -35,10 +35,12 @@ async def main():
 
   @bind(d1.ok_button, "click")
   def ok(ev):
+    d1.close()
     window.__brythonNs[brythonScriptId] = { 'complete': True, 'result': homeServer }
 
   @bind(d1.cancel_button, "click")
   def cancel(ev):
+    d1.close()
     window.__brythonNs[brythonScriptId] = { 'complete': True, 'result': 'Fine, be that way 😢' }
 
   @bind(d1.close_button, "click")
